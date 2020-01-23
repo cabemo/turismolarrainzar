@@ -10,7 +10,7 @@ app.set('views', 'views');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', (req, res) => {
+app.use((req, res) => {
     res.render('index.ejs');
 });
 
