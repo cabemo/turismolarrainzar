@@ -10,11 +10,15 @@ app.set('views', 'views');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use((req, res) => {
+app.use('/', (req, res) => {
     res.render('index.ejs');
 });
 
-const port = 3000 || process.env.PORT
+app.use('/*', (req, res) => {
+    res.redirect('/');
+});
+
+const port = process.env.PORT || 3000;
 
 console.log(`Connecting to port ${port}`)
 app.listen(port);
