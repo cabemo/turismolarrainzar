@@ -1,0 +1,25 @@
+{
+  "name": "kuxlejal",
+  "version": "1.0.0",
+  "description": "Página web de ruta cultural Kuxlejal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Cabemo/kuxlejal.git"
+  },
+  "author": "Emilio E. G. Canton Bermudez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cabemo/kuxlejal/issues"
+  },
+  "homepage": "https://github.com/Cabemo/kuxlejal#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
