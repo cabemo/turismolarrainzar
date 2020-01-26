@@ -1112,6 +1112,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1158,7 +1159,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("/images/sartenes.jpeg");
+			background-image: url("/images/pedal.jpg");
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -1621,6 +1622,34 @@ input, select, textarea {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 
+		}
+
+		.gallery {
+			margin-bottom: 2rem;
+			position: relative;
+			text-align: center;
+			width: 100%;
+			padding: 3rem;
+		}
+
+		.gallery img {
+			box-sizing: border-box;
+			width: 30%;
+			/* position: absolute; */
+			/* transform: rotate(90deg); */
+			/* -webkit-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-moz-transform: rotate(90deg); */
+			transition: width 500ms ease-in-out;
+		}
+
+		.rotate {
+			transform: rotate(90deg);
+		}
+
+		.gallery img:hover {
+			/* transform: rotate(90deg); */
+			width: 32%;
 		}
 
 /* Footer */
