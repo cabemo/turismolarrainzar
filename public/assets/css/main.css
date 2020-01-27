@@ -1161,7 +1161,7 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("/images/pedal.jpg");
 			background-position: center;
-			background-size: 100%;
+			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
